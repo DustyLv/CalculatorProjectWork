@@ -9,9 +9,9 @@
     <EditText
         android:id="@+id/editTextNumber"
         android:layout_width="302dp"
-        android:layout_height="59dp"
+        android:layout_height="80dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="60dp"
         android:ems="16"
         android:inputType="none"
         android:textSize="34sp"
@@ -20,14 +20,16 @@
 
     <Button
         android:id="@+id/btnBackspace"
-        android:layout_width="60dp"
+        android:layout_width="0dp"
         android:layout_height="60dp"
         android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"
-        android:drawableLeft="@android:drawable/ic_input_delete"
         android:drawableTint="#FFFFFF"
+        android:gravity="center"
         android:onClick="OnBackspacePressed"
         android:textSize="25sp"
+        app:icon="@android:drawable/ic_input_delete"
+        app:iconGravity="textStart"
         app:layout_constraintBottom_toBottomOf="@+id/editTextNumber"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -37,6 +39,7 @@
     <TableLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumber">

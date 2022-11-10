@@ -102,14 +102,7 @@ public class MainActivity extends AppCompatActivity {
 
 //region ----- Main logic functions -----
     private void Calculate(){
-        String inputString = String.valueOf(m_InputOutput.getText());
-        Expression expression = new ExpressionBuilder(inputString).build();
-        try {
-            double result = expression.evaluate();
-            SetOutput(result);
-        }catch (ArithmeticException ex){
-
-        }
+        SetOutput(GetInputOrEvaluate());
         SetSelectionToEnd();
     }
 
